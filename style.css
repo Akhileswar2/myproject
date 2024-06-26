@@ -1,3 +1,27 @@
-#container {
-    background-color: red;
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: solid black 3px;
+}
+
+.logo {
+    width: 150px;
+
+}
+
+.nav-items {
+    padding-top: 20px;
+}
+
+ul {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-list {
+    font-size: 20px;
+    list-style: none;
+    padding: 10px;
 }

@@ -2,11 +2,34 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 
-const h1 = React.createElement("h1", { id: "title1" }, "Namaste React1");
-const h2 = React.createElement("h2", { id: "title2" }, "Namaste React2");
-const h3 = React.createElement("h3", { id: "title3" }, "Namaste React3");
-const heading = React.createElement("div", { id: "container" }, [h1, h2, h3]);
+const Header = () => {
+    return (
+        <div className="header">
+            <div >
+                <img className="logo" src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&txt_keyword=All" />
+            </div>
+
+            <div className="nav-items">
+                <ul>
+                    <li className="nav-list">Home</li>
+                    <li className="nav-list">About  Us</li>
+                    <li className="nav-list">Contact Us</li>
+                    <li className="nav-list">Cart</li>
+                </ul>
+            </div>
+        </div>
+    );
+};
+
+const AppLayout = () => {
+    return (
+        <div className="">
+            <Header />
+
+        </div>
+    );
+};
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<AppLayout />);
